@@ -1,0 +1,1223 @@
+{
+    "bugs": [
+        {
+            "name": "Agrias Butterfly",
+            "price": 3000,
+            "timeStart": 8,
+            "timeEnd": 17,
+            "monthStartN": 4,
+            "monthEndN": 9,
+            "monthStartS": 11,
+            "monthEndS": 3,
+            "location": "Flying"
+        },
+        {
+            "name": "Ant",
+            "price": 80,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "On rotten food"
+        },
+        {
+            "name": "Atlas Moth",
+            "price": 3000,
+            "timeStart": 7,
+            "timeEnd": 16,
+            "monthStartN": 4,
+            "monthEndN": 9,
+            "monthStartS": 10,
+            "monthEndS": 3,
+            "location": "On Trees"
+        },
+        {
+            "name": "Bagworm",
+            "price": 600,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "Shaking Trees"
+        },
+        {
+            "name": "Banded Dragonfly",
+            "price": 4500,
+            "timeStart": 8,
+            "timeEnd": 17,
+            "monthStartN": 5,
+            "monthEndN": 10,
+            "monthStartS": 11,
+            "monthEndS": 4,
+            "location": "Flying"
+        },
+        {
+            "name": "Bell Cricket",
+            "price": 430,
+            "timeStart": 17,
+            "timeEnd": 8,
+            "monthStartN": 9,
+            "monthEndN": 10,
+            "monthStartS": 3,
+            "monthEndS": 4,
+            "location": "Ground"
+        },
+        {
+            "name": "Blue Weevil Beetle",
+            "price": 800,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 7,
+            "monthEndN": 8,
+            "monthStartS": 1,
+            "monthEndS": 2,
+            "location": "Palm Trees"
+        },
+        {
+            "name": "Brown Cicada",
+            "price": 250,
+            "timeStart": 8,
+            "timeEnd": 17,
+            "monthStartN": 7,
+            "monthEndN": 8,
+            "monthStartS": 1,
+            "monthEndS": 2,
+            "location": "On Trees"
+        },
+        {
+            "name": "Centipede",
+            "price": 300,
+            "timeStart": 16,
+            "timeEnd": 23,
+            "monthStartN": 9,
+            "monthEndN": 6,
+            "monthStartS": 3,
+            "monthEndS": 12,
+            "location": "On Trees"
+        },
+        {
+            "name": "Cicada Shell",
+            "price": 10,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 7,
+            "monthEndN": 8,
+            "monthStartS": 1,
+            "monthEndS": 2,
+            "location": "On Trees"
+        },
+        {
+            "name": "Citrus Long-horned Beetle",
+            "price": 350,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "Tree Stumps"
+        },
+        {
+            "name": "Common Bluebottle",
+            "price": 300,
+            "timeStart": 4,
+            "timeEnd": 19,
+            "monthStartN": 4,
+            "monthEndN": 8,
+            "monthStartS": 10,
+            "monthEndS": 2,
+            "location": "Flying"
+        },
+        {
+            "name": "Common Butterfly",
+            "price": 160,
+            "timeStart": 4,
+            "timeEnd": 19,
+            "monthStartN": 9,
+            "monthEndN": 6,
+            "monthStartS": 3,
+            "monthEndS": 12,
+            "location": "Flying"
+        },
+        {
+            "name": "Cricket",
+            "price": 130,
+            "timeStart": 4,
+            "timeEnd": 19,
+            "monthStartN": 9,
+            "monthEndN": 11,
+            "monthStartS": 3,
+            "monthEndS": 5,
+            "location": "Dig at chirp"
+        },
+        {
+            "name": "Cyclommatus Stag",
+            "price": 8000,
+            "timeStart": 17,
+            "timeEnd": 20,
+            "monthStartN": 7,
+            "monthEndN": 8,
+            "monthStartS": 1,
+            "monthEndS": 2,
+            "location": "On Trees"
+        },
+        {
+            "name": "Damselfly",
+            "price": 500,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 11,
+            "monthEndN": 2,
+            "monthStartS": 5,
+            "monthEndS": 8,
+            "location": "Flying"
+        },
+        {
+            "name": "Darner Dragonfly",
+            "price": 230,
+            "timeStart": 8,
+            "timeEnd": 17,
+            "monthStartN": 4,
+            "monthEndN": 10,
+            "monthStartS": 10,
+            "monthEndS": 4,
+            "location": "Flying"
+        },
+        {
+            "name": "Diving Beetle",
+            "price": 800,
+            "timeStart": 8,
+            "timeEnd": 19,
+            "monthStartN": 5,
+            "monthEndN": 9,
+            "monthStartS": 11,
+            "monthEndS": 3,
+            "location": "Ponds / Rivers"
+        },
+        {
+            "name": "Drone Beetle",
+            "price": 200,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 6,
+            "monthEndN": 8,
+            "monthStartS": 12,
+            "monthEndS": 2,
+            "location": "On Trees"
+        },
+        {
+            "name": "Dung Beetle",
+            "price": 3000,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 12,
+            "monthEndN": 2,
+            "monthStartS": 6,
+            "monthEndS": 8,
+            "location": "Snowballs"
+        },
+        {
+            "name": "Earth-boring Dung Beetle",
+            "price": 300,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 7,
+            "monthEndN": 9,
+            "monthStartS": 1,
+            "monthEndS": 3,
+            "location": "Ground"
+        },
+        {
+            "name": "Emperor Butterfly",
+            "price": 4000,
+            "timeStart": 17,
+            "timeEnd": 8,
+            "monthStartN": 6,
+            "monthEndN": 9,
+            "monthStartN2": 12,
+            "monthEndN2": 3,
+            "monthStartS": 12,
+            "monthEndS": 3,
+            "monthStartS2": 6,
+            "monthEndS2": 9,
+            "location": "Flying"
+        },
+        {
+            "name": "Evening Cicada",
+            "price": 550,
+            "timeStart": 4,
+            "timeEnd": 8,
+            "timeStart2": 16,
+            "timeEnd2": 19,
+            "monthStartN": 7,
+            "monthEndN": 8,
+            "monthStartS": 1,
+            "monthEndS": 2,
+            "location": "On Trees"
+        },
+        {
+            "name": "Firefly",
+            "price": 300,
+            "timeStart": 19,
+            "timeEnd": 4,
+            "monthStartN": 6,
+            "monthEndN": -1,
+            "monthStartS": 12,
+            "monthEndS": -1,
+            "location": "On Trees"
+        },
+        {
+            "name": "Flea",
+            "price": 70,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 4,
+            "monthEndN": 11,
+            "monthStartS": 10,
+            "monthEndS": 5,
+            "location": "On Islanders"
+        },
+        {
+            "name": "Fly",
+            "price": 60,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "On Islanders"
+        },
+        {
+            "name": "Giant Cicada",
+            "price": 500,
+            "timeStart": 8,
+            "timeEnd": 17,
+            "monthStartN": 7,
+            "monthEndN": 8,
+            "monthStartS": 1,
+            "monthEndS": 2,
+            "location": "On Trees"
+        },
+        {
+            "name": "Giant Stag",
+            "price": 10000,
+            "timeStart": 23,
+            "timeEnd": 8,
+            "monthStartN": 7,
+            "monthEndN": 8,
+            "monthStartS": 1,
+            "monthEndS": 2,
+            "location": "On Trees"
+        },
+        {
+            "name": "Giant Water Bug",
+            "price": 2000,
+            "timeStart": 19,
+            "timeEnd": 8,
+            "monthStartN": 4,
+            "monthEndN": 9,
+            "monthStartS": 10,
+            "monthEndS": 3,
+            "location": "Ponds / Rivers"
+        },
+        {
+            "name": "Giraffe Stag",
+            "price": 12000,
+            "timeStart": 17,
+            "timeEnd": 8,
+            "monthStartN": 7,
+            "monthEndN": 8,
+            "monthStartS": 1,
+            "monthEndS": 2,
+            "location": "On Trees"
+        },
+        {
+            "name": "Golden Stag",
+            "price": 12000,
+            "timeStart": 17,
+            "timeEnd": 8,
+            "monthStartN": 7,
+            "monthEndN": 8,
+            "monthStartS": 1,
+            "monthEndS": 2,
+            "location": "On Trees"
+        },
+        {
+            "name": "Goliath Beetle",
+            "price": 8000,
+            "timeStart": 17,
+            "timeEnd": 8,
+            "monthStartN": 6,
+            "monthEndN": 9,
+            "monthStartS": 12,
+            "monthEndS": 3,
+            "location": "On Coconut Trees"
+        },
+        {
+            "name": "Grasshopper",
+            "price": 160,
+            "timeStart": 8,
+            "timeEnd": 17,
+            "monthStartN": 7,
+            "monthEndN": 9,
+            "monthStartS": 1,
+            "monthEndS": 3,
+            "location": "Ground"
+        },
+        {
+            "name": "Great Purple Emperor",
+            "price": 3000,
+            "timeStart": 4,
+            "timeEnd": 19,
+            "monthStartN": 5,
+            "monthEndN": 8,
+            "monthStartS": 11,
+            "monthEndS": 2,
+            "location": "Flying"
+        },
+        {
+            "name": "Hermit Crab",
+            "price": 1000,
+            "timeStart": 19,
+            "timeEnd": 8,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "Beach"
+        },
+        {
+            "name": "Honeybee",
+            "price": 200,
+            "timeStart": 8,
+            "timeEnd": 17,
+            "monthStartN": 3,
+            "monthEndN": 7,
+            "monthStartS": 3,
+            "monthEndS": 7,
+            "location": "Flying"
+        },
+        {
+            "name": "Horned Atlas",
+            "price": 8000,
+            "timeStart": 17,
+            "timeEnd": 8,
+            "monthStartN": 7,
+            "monthEndN": 8,
+            "monthStartS": 1,
+            "monthEndS": 2,
+            "location": "On Trees"
+        },
+        {
+            "name": "Horned Dynastid",
+            "price": 1350,
+            "timeStart": 17,
+            "timeEnd": 8,
+            "monthStartN": 7,
+            "monthEndN": 8,
+            "monthStartS": 1,
+            "monthEndS": 2,
+            "location": "On Trees"
+        },
+        {
+            "name": "Horned Elephant",
+            "price": 8000,
+            "timeStart": 17,
+            "timeEnd": 8,
+            "monthStartN": 7,
+            "monthEndN": 8,
+            "monthStartS": 1,
+            "monthEndS": 2,
+            "location": "On Trees"
+        },
+        {
+            "name": "Horned Hercules",
+            "price": 12000,
+            "timeStart": 17,
+            "timeEnd": 8,
+            "monthStartN": 7,
+            "monthEndN": 8,
+            "monthStartS": 1,
+            "monthEndS": 2,
+            "location": "On Trees"
+        },
+        {
+            "name": "Jewel Beetle",
+            "price": 2400,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 4,
+            "monthEndN": 8,
+            "monthStartS": 10,
+            "monthEndS": 2,
+            "location": "Tree Stumps"
+        },
+        {
+            "name": "Ladybug",
+            "price": 200,
+            "timeStart": 8,
+            "timeEnd": 17,
+            "monthStartN": 3,
+            "monthEndN": 6,
+            "monthStartS": 9,
+            "monthEndS": 12,
+            "monthStartS2": 4,
+            "monthEndS2": -1,
+            "location": "On Flowers"
+        },
+        {
+            "name": "Long Locust",
+            "price": 200,
+            "timeStart": 8,
+            "timeEnd": 19,
+            "monthStartN": 4,
+            "monthEndN": 11,
+            "monthStartS": 11,
+            "monthEndS": 5,
+            "location": "Ground"
+        },
+        {
+            "name": "Madagascan Sunset Moth",
+            "price": 2500,
+            "timeStart": 8,
+            "timeEnd": 16,
+            "monthStartN": 4,
+            "monthEndN": 9,
+            "monthStartS": 10,
+            "monthEndS": 3,
+            "location": "Ground"
+        },
+        {
+            "name": "Man-faced Stinkbug",
+            "price": 1000,
+            "timeStart": 19,
+            "timeEnd": 8,
+            "monthStartN": 3,
+            "monthEndN": 11,
+            "monthStartS": 9,
+            "monthEndS": 5,
+            "location": "On Flowers"
+        },
+        {
+            "name": "Mantis",
+            "price": 430,
+            "timeStart": 8,
+            "timeEnd": 17,
+            "monthStartN": 3,
+            "monthEndN": 11,
+            "monthStartS": 9,
+            "monthEndS": 5,
+            "location": "On Flowers"
+        },
+        {
+            "name": "Migratory Locust",
+            "price": 600,
+            "timeStart": 8,
+            "timeEnd": 19,
+            "monthStartN": 8,
+            "monthEndN": 11,
+            "monthStartS": 2,
+            "monthEndS": 5,
+            "location": "Ground"
+        },
+        {
+            "name": "Miyama Stag",
+            "price": 1000,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 7,
+            "monthEndN": 8,
+            "monthStartS": 1,
+            "monthEndS": 2,
+            "location": "On Trees"
+        },
+        {
+            "name": "Mole Cricket",
+            "price": 500,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 11,
+            "monthEndN": 5,
+            "monthStartS": 5,
+            "monthEndS": 11,
+            "location": "Underground"
+        },
+        {
+            "name": "Monarch Butterfly",
+            "price": 140,
+            "timeStart": 4,
+            "timeEnd": 17,
+            "monthStartN": 9,
+            "monthEndN": 11,
+            "monthStartS": 3,
+            "monthEndS": 5,
+            "location": "Flying"
+        },
+        {
+            "name": "Mosquito",
+            "price": 130,
+            "timeStart": 17,
+            "timeEnd": 4,
+            "monthStartN": 6,
+            "monthEndN": 9,
+            "monthStartS": 12,
+            "monthEndS": 3,
+            "location": "Flying"
+        },
+        {
+            "name": "Moth",
+            "price": 130,
+            "timeStart": 19,
+            "timeEnd": 4,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "Flying By Light"
+        },
+        {
+            "name": "Orchid Mantis",
+            "price": 2400,
+            "timeStart": 8,
+            "timeEnd": 17,
+            "monthStartN": 3,
+            "monthEndN": 11,
+            "monthStartS": 9,
+            "monthEndS": 5,
+            "location": "On White Flowers"
+        },
+        {
+            "name": "Paper Kite Butterfly",
+            "price": 1000,
+            "timeStart": 8,
+            "timeEnd": 19,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "Flying"
+        },
+        {
+            "name": "Peacock Butterfly",
+            "price": 2500,
+            "timeStart": 4,
+            "timeEnd": 19,
+            "monthStartN": 3,
+            "monthEndN": 6,
+            "monthStartS": 9,
+            "monthEndS": 12,
+            "location": "Flying by Hybrid Flowers"
+        },
+        {
+            "name": "Pill Bug",
+            "price": 250,
+            "timeStart": 23,
+            "timeEnd": 16,
+            "monthStartN": 9,
+            "monthEndN": 6,
+            "monthStartS": 3,
+            "monthEndS": 12,
+            "location": "Hit Rocks"
+        },
+        {
+            "name": "Pondskater",
+            "price": 130,
+            "timeStart": 8,
+            "timeEnd": 19,
+            "monthStartN": 5,
+            "monthEndN": 9,
+            "monthStartS": 11,
+            "monthEndS": 3,
+            "location": "Ponds"
+        },
+        {
+            "name": "Queen Alexandra's Birdwing",
+            "price": 4000,
+            "timeStart": 8,
+            "timeEnd": 16,
+            "monthStartN": 5,
+            "monthEndN": 9,
+            "monthStartS": 11,
+            "monthEndS": 3,
+            "location": "Flying"
+        },
+        {
+            "name": "Rainbow Stag",
+            "price": 6000,
+            "timeStart": 19,
+            "timeEnd": 8,
+            "monthStartN": 6,
+            "monthEndN": 9,
+            "monthStartS": 12,
+            "monthEndS": 3,
+            "location": "On Trees"
+        },
+        {
+            "name": "Rajah Brooke's Birdwing",
+            "price": 2500,
+            "timeStart": 8,
+            "timeEnd": 17,
+            "monthStartN": 4,
+            "monthEndN": 9,
+            "monthStartN2": 12,
+            "monthEndN2": 2,
+            "monthStartS": 11,
+            "monthEndS": 3,
+            "monthStartS2": 6,
+            "monthEndS2": 8,
+            "location": "Flying Near Purple Flowers"
+        },
+        {
+            "name": "Red Dragonfly",
+            "price": 180,
+            "timeStart": 8,
+            "timeEnd": 19,
+            "monthStartN": 9,
+            "monthEndN": 10,
+            "monthStartS": 3,
+            "monthEndS": 4,
+            "location": "Flying"
+        },
+        {
+            "name": "Rice Grasshopper",
+            "price": 160,
+            "timeStart": 8,
+            "timeEnd": 19,
+            "monthStartN": 8,
+            "monthEndN": 11,
+            "monthStartS": 2,
+            "monthEndS": 5,
+            "location": "Ground"
+        },
+        {
+            "name": "Robust Cicada",
+            "price": 300,
+            "timeStart": 8,
+            "timeEnd": 17,
+            "monthStartN": 7,
+            "monthEndN": 8,
+            "monthStartS": 1,
+            "monthEndS": 2,
+            "location": "On Trees"
+        },
+        {
+            "name": "Rosalia Batesi Beetle",
+            "price": 3000,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 5,
+            "monthEndN": 9,
+            "monthStartS": 11,
+            "monthEndS": 3,
+            "location": "Tree Stumps"
+        },
+        {
+            "name": "Saw Stag",
+            "price": 2000,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 7,
+            "monthEndN": 8,
+            "monthStartS": 1,
+            "monthEndS": 2,
+            "location": "On Trees"
+        },
+        {
+            "name": "Scarab Beetle",
+            "price": 10000,
+            "timeStart": 23,
+            "timeEnd": 8,
+            "monthStartN": 7,
+            "monthEndN": 8,
+            "monthStartS": 1,
+            "monthEndS": 2,
+            "location": "On Trees"
+        },
+        {
+            "name": "Scorpion",
+            "price": 8000,
+            "timeStart": 19,
+            "timeEnd": 4,
+            "monthStartN": 5,
+            "monthEndN": 10,
+            "monthStartS": 11,
+            "monthEndS": 4,
+            "location": "Ground"
+        },
+        {
+            "name": "Snail",
+            "price": 250,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "On Rocks When Raining"
+        },
+        {
+            "name": "Spider",
+            "price": 480,
+            "timeStart": 19,
+            "timeEnd": 8,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "Shaking Trees"
+        },
+        {
+            "name": "Stinkbug",
+            "price": 120,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 3,
+            "monthEndN": 11,
+            "monthStartS": 9,
+            "monthEndS": 5,
+            "location": "On Flowers"
+        },
+        {
+            "name": "Tarantula",
+            "price": 8000,
+            "timeStart": 19,
+            "timeEnd": 4,
+            "monthStartN": 11,
+            "monthEndN": 4,
+            "monthStartS": 5,
+            "monthEndS": 10,
+            "location": "Ground"
+        },
+        {
+            "name": "Tiger Beetle",
+            "price": 1500,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 2,
+            "monthEndN": 11,
+            "monthStartS": 8,
+            "monthEndS": 5,
+            "location": "Ground"
+        },
+        {
+            "name": "Tiger Butterfly",
+            "price": 240,
+            "timeStart": 4,
+            "timeEnd": 19,
+            "monthStartN": 3,
+            "monthEndN": 9,
+            "monthStartS": 9,
+            "monthEndS": 3,
+            "location": "Flying"
+        },
+        {
+            "name": "Violin Beetle",
+            "price": 450,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 5,
+            "monthEndN": 6,
+            "monthStartN2": 9,
+            "monthEndN2": 11,
+            "monthStartS": 11,
+            "monthEndS": 12,
+            "monthStartS2": 3,
+            "monthEndS2": 4,
+            "location": "Tree Stumps"
+        },
+        {
+            "name": "Walker Cicada",
+            "price": 400,
+            "timeStart": 8,
+            "timeEnd": 17,
+            "monthStartN": 8,
+            "monthEndN": 9,
+            "monthStartS": 2,
+            "monthEndS": 3,
+            "location": "Flying"
+        },
+        {
+            "name": "Walking Leaf",
+            "price": 600,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 7,
+            "monthEndN": 8,
+            "monthStartS": 1,
+            "monthEndS": 3,
+            "location": "Near Trees - Looks Like Furniture Leaf"
+        },
+        {
+            "name": "Walking Stick",
+            "price": 600,
+            "timeStart": 4,
+            "timeEnd": 8,
+            "timeStart2": 17,
+            "timeEnd2": 19,
+            "monthStartN": 7,
+            "monthEndN": 11,
+            "monthStartS": 1,
+            "monthEndS": 5,
+            "location": "On Trees"
+        },
+        {
+            "name": "Wasp",
+            "price": 2500,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "Shaking Trees"
+        },
+        {
+            "name": "Wharf Roach",
+            "price": 200,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "Rocks at Beach"
+        },
+        {
+            "name": "Yellow Butterfly",
+            "price": 160,
+            "timeStart": 4,
+            "timeEnd": 19,
+            "monthStartN": 3,
+            "monthEndN": 6,
+            "monthStartN2": 9,
+            "monthEndN2": 10,
+            "monthStartS": 3,
+            "monthEndS": 4,
+            "monthStartS2": 9,
+            "monthEndS2": 12,
+            "location": "Tree Stumps"
+        }
+    ],
+    "fish": [
+        {
+            "name": "Anchovy",
+            "price": 200
+        },
+        {
+            "name": "Angel Fish",
+            "price": 3000
+        },
+        {
+            "name": "Arapaima",
+            "price": 10000
+        },
+        {
+            "name": "Arowana",
+            "price": 10000
+        },
+        {
+            "name": "Barred Knifejaw",
+            "price": 5000
+        },
+        {
+            "name": "Barreleye",
+            "price": 15000
+        },
+        {
+            "name": "Beta",
+            "price": 2500
+        },
+        {
+            "name": "Bitterling",
+            "price": 900
+        },
+        {
+            "name": "Black Bass",
+            "price": 400
+        },
+        {
+            "name": "Blowfish",
+            "price": 5000
+        },
+        {
+            "name": "Blue Marlin",
+            "price": 10000
+        },
+        {
+            "name": "Bluegill",
+            "price": 180
+        },
+        {
+            "name": "Butterfly Fish",
+            "price": 1000
+        },
+        {
+            "name": "Carp",
+            "price": 300
+        },
+        {
+            "name": "Catfish",
+            "price": 800
+        },
+        {
+            "name": "Char",
+            "price": 3800
+        },
+        {
+            "name": "Cherry Salmon",
+            "price": 1000
+        },
+        {
+            "name": "Clownfish",
+            "price": 650
+        },
+        {
+            "name": "Coelacanth",
+            "price": 15000
+        },
+        {
+            "name": "Crawfish",
+            "price": 200
+        },
+        {
+            "name": "Crucian Carp",
+            "price": 160
+        },
+        {
+            "name": "Dab",
+            "price": 300
+        },
+        {
+            "name": "Dace",
+            "price": 240
+        },
+        {
+            "name": "Dorado",
+            "price": 15000
+        },
+        {
+            "name": "Football Fish",
+            "price": 2500
+        },
+        {
+            "name": "Freshwater Goby",
+            "price": 400
+        },
+        {
+            "name": "Frog",
+        {
+            "name": "Gar",
+            "price": 6000
+        },
+        {
+            "name": "Giant Snakehead",
+        {
+            "name": "Giant Trevally",
+            "price": 4500,
+            "location": "Pier"
+        },
+        {
+            "name": "Golden Trout",
+            "price": 15000
+        },
+        {
+            "name": "Goldfish",
+            "price": 1300
+        },
+        {
+            "name": "Great White Shark",
+            "price": 15000
+        },
+        {
+            "name": "Guppy",
+            "price": 1300
+        },
+        {
+            "name": "Hammerhead Shark",
+            "price": 8000
+        },
+        {
+            "name": "Horse Mackerel",
+            "price": 150
+        },
+        {
+            "name": "Killifish",
+            "price": 300
+        },
+        {
+            "name": "King Salmon",
+            "price": 1800
+        },
+        {
+            "name": "Koi",
+            "price": 4000
+        },
+        {
+            "name": "Loach",
+            "price": 400
+        },
+        {
+            "name": "Mahi-mahi",
+            "price": 6000
+        },
+        {
+            "name": "Mitten Crab",
+            "price": 2000
+        },
+        {
+            "name": "Moray Eel",
+            "price": 2000
+        },
+        {
+            "name": "Napoleonfish",
+            "price": 10000
+        },
+        {
+            "name": "Neon Tetra",
+            "price": 500
+        },
+        {
+            "name": "Nibble Fish",
+            "price": 1500
+        },
+        {
+            "name": "Oarfish",
+            "price": 9000
+        },
+        {
+            "name": "Ocean Sunfish",
+            "price": 4000
+        },
+        {
+            "name": "Olive Flounder",
+            "price": 800
+        },
+        {
+            "name": "Pale Chub",
+            "price": 160
+        },
+        {
+            "name": "Pike",
+            "price": 1800
+        },
+        {
+            "name": "Piranha",
+            "price": 2500
+        },
+        {
+            "name": "Pond Smelt},
+        {
+            "name": "Pop-eyed Goldfish",
+            "price": 1300
+        },
+        {
+            "name": "Puffer Fish",
+            "price": 250
+        },
+        {
+            "name": "Rainbowfish",
+            "price": 800
+        },
+        {
+            "name": "Ranchu Goldfish",
+            "price": 4500
+        },
+        {
+            "name": "Ray",
+            "price": 3000
+        },
+        {
+            "name": "Red Snapper",
+            "price": 3000
+        },
+        {
+            "name": "Ribbon Eel",
+            "price": 600
+        },
+        {
+            "name": "Saddled Bichir",
+            "price": 4000
+        },
+        {
+            "name": "Salmon",
+            "price": 700
+        },
+        {
+            "name": "Saw Shark",
+            "price": 12000
+        },
+        {
+            "name": "Sea Bass",
+            "price": 400
+        },
+        {
+            "name": "Sea Butterfly",
+            "price": 1000
+        },
+        {
+            "name": "Seahorse",
+            "price": 1100
+        },
+        {
+            "name": "Snapping Turtle",
+            "price": 5000
+        },
+        {
+            "name": "Soft-shelled Turtle",
+            "price": 3750
+        },
+        {
+            "name": "Squid",
+            "price": 500
+        },
+        {
+            "name": "Stringfish",
+            "price": 15000
+        },
+        {
+            "name": "Sturgeon",
+            "price": 10000
+        },
+        {
+            "name": "Suckerfish",
+            "price": 1500
+        },
+        {
+            "name": "Surgeonfish",
+            "price": 1000
+        },
+        {
+            "name": "Sweetfish",
+            "price": 900
+        },
+        {
+            "name": "Tadpole",
+            "price": 100
+        },
+        {
+            "name": "Tilapia",
+            "price": 800
+        },
+        {
+            "name": "Tuna",
+            "price": 7000
+        },
+        {
+            "name": "Whale Shark",
+            "price": 13000
+        },
+        {
+            "name": "Yellow Perch",
+            "price": 300
+        },
+        {
+            "name": "Zebra Turkeyfish",
+            "price": 500
+        }
+    ]
+}
