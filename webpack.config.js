@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const projectConfig = require('./config.js');
 
@@ -52,11 +53,15 @@ module.exports = {
                     {
                         loader: 'css-loader',
                         options: {
-                            sourceMap: true,
+                            modules: {
+                                camelCase: true,
+                                localIdentName: '[local]-[hash:base64:12]',
+                            },
                             modules: true,
-                            camelCase: true,
-                            localIdentName: '[local]-[hash:base64:12]',
+                            sourceMap: true,
+
                         },
+
                     },
                     'less-loader',
                 ],
@@ -74,5 +79,11 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'client.css',
         }),
+        new CopyWebpackPlugin([
+            {
+                from: '../data.json',
+                to: 'data.json',
+            },
+        ]),
     ],
 };

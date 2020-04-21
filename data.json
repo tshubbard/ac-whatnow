@@ -1009,13 +1009,15 @@
             "price": 400
         },
         {
-            "name": "Frog",
+            "name": "Frog"
+        },
         {
             "name": "Gar",
             "price": 6000
         },
         {
-            "name": "Giant Snakehead",
+            "name": "Giant Snakehead"
+        },
         {
             "name": "Giant Trevally",
             "price": 4500,
@@ -1110,7 +1112,8 @@
             "price": 2500
         },
         {
-            "name": "Pond Smelt},
+            "name": "Pond Smelt"
+        },
         {
             "name": "Pop-eyed Goldfish",
             "price": 1300
