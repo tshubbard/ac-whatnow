@@ -110,6 +110,9 @@ export class App extends React.Component {
     }
 
     onHemiChange(evt, hemi) {
+        if (!hemi) {
+            return;
+        }
         console.log('hemi change ', hemi);
         localStorage.setItem('hemi', hemi);
         this.setState({
@@ -120,6 +123,11 @@ export class App extends React.Component {
     }
 
     onDataTypeChange(evt, dataType) {
+        console.log('DT CHANGE ', dataType, this.state.dataType);
+
+        if (!dataType) {
+            return;
+        }
         console.log('onDataTypeChange change ', dataType);
         localStorage.setItem('dataType', dataType);
         this.setState({
@@ -222,7 +230,7 @@ export class App extends React.Component {
         return (
             <Container elevation={3}>
                 <h1><img src={'logo.png'} alt={'AC-WhatNow.com Logo'}/></h1>
-                <h4>Your source to find out what's available in Animal Crossing New Horizions RIGHT NOW!</h4>
+                <h3>Your source to find out what's available in Animal Crossing New Horizions RIGHT NOW!</h3>
                 <div >
                     <Grid className={styles.filterRow} container justify="space-around" component={Paper} elevation={3}>
 
@@ -319,7 +327,10 @@ export class App extends React.Component {
                 <footer>
                     <div className={styles.footerContainer}>
                         <div className={styles.footer}>
-
+                            Any issues or requests can be filed:
+                            <a href={'https://github.com/tshubbard/ac-whatnow/issues'} target={'_blank'}>
+                                https://github.com/tshubbard/ac-whatnow/issues
+                            </a>
                         </div>
                     </div>
                 </footer>
