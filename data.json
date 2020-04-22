@@ -906,321 +906,981 @@
     "fish": [
         {
             "name": "Anchovy",
-            "price": 200
+            "price": 200,
+            "timeStart": 4,
+            "timeEnd": 21,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "Sea",
+            "shadowSize": "Small"
         },
         {
             "name": "Angel Fish",
-            "price": 3000
+            "price": 3000,
+            "timeStart": 16,
+            "timeEnd": 9,
+            "monthStartN": 5,
+            "monthEndN": 10,
+            "monthStartS": 11,
+            "monthEndS": 4,
+            "location": "River",
+            "shadowSize": "Small"
         },
         {
             "name": "Arapaima",
-            "price": 10000
+            "price": 10000,
+            "timeStart": 16,
+            "timeEnd": 9,
+            "monthStartN": 6,
+            "monthEndN": 9,
+            "monthStartS": 12,
+            "monthEndS": 3,
+            "location": "River",
+            "shadowSize": "Largest"
         },
         {
             "name": "Arowana",
-            "price": 10000
+            "price": 10000,
+            "timeStart": 16,
+            "timeEnd": 9,
+            "monthStartN": 6,
+            "monthEndN": 9,
+            "monthStartS": 12,
+            "monthEndS": 3,
+            "location": "River",
+            "shadowSize": "Large"
         },
         {
             "name": "Barred Knifejaw",
-            "price": 5000
+            "price": 5000,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 3,
+            "monthEndN": 11,
+            "monthStartS": 9,
+            "monthEndS": 5,
+            "location": "Sea",
+            "shadowSize": "Medium"
         },
         {
             "name": "Barreleye",
-            "price": 15000
+            "price": 15000,
+            "timeStart": 9,
+            "timeEnd": 16,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "Sea",
+            "shadowSize": "Small"
         },
         {
             "name": "Beta",
-            "price": 2500
+            "price": 2500,
+            "timeStart": 9,
+            "timeEnd": 16,
+            "monthStartN": 5,
+            "monthEndN": 10,
+            "monthStartS": 11,
+            "monthEndS": 4,
+            "location": "River",
+            "shadowSize": "Small"
         },
         {
             "name": "Bitterling",
-            "price": 900
+            "price": 900,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 11,
+            "monthEndN": 3,
+            "monthStartS": 5,
+            "monthEndS": 9,
+            "location": "River",
+            "shadowSize": "Smallest"
         },
         {
             "name": "Black Bass",
-            "price": 400
+            "price": 400,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "River",
+            "shadowSize": "Large"
         },
         {
             "name": "Blowfish",
-            "price": 5000
+            "price": 5000,
+            "timeStart": 18,
+            "timeEnd": 4,
+            "monthStartN": 11,
+            "monthEndN": 4,
+            "monthStartS": 5,
+            "monthEndS": 8,
+            "location": "Sea",
+            "shadowSize": "Medium"
         },
         {
             "name": "Blue Marlin",
-            "price": 10000
+            "price": 10000,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 7,
+            "monthEndN": 9,
+            "monthStartN2": 11,
+            "monthEndN2": 4,
+            "monthStartS": 1,
+            "monthEndS": 3,
+            "monthStartS2": 5,
+            "monthEndS2": 11,
+            "location": "Pier",
+            "shadowSize": "Largest"
         },
         {
             "name": "Bluegill",
-            "price": 180
+            "price": 180,
+            "timeStart": 9,
+            "timeEnd": 16,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "River",
+            "shadowSize": "Small"
         },
         {
             "name": "Butterfly Fish",
-            "price": 1000
+            "price": 1000,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 4,
+            "monthEndN": 9,
+            "monthStartS": 10,
+            "monthEndS": 3,
+            "location": "Sea",
+            "shadowSize": "Small"
         },
         {
             "name": "Carp",
-            "price": 300
+            "price": 300,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "Pond",
+            "shadowSize": "Large"
         },
         {
             "name": "Catfish",
-            "price": 800
+            "price": 800,
+            "timeStart": 16,
+            "timeEnd": 9,
+            "monthStartN": 5,
+            "monthEndN": 10,
+            "monthStartS": 11,
+            "monthEndS": 4,
+            "location": "Pond",
+            "shadowSize": "Large"
         },
         {
             "name": "Char",
-            "price": 3800
+            "price": 3800,
+            "timeStart": 16,
+            "timeEnd": 9,
+            "monthStartN": 3,
+            "monthEndN": 6,
+            "monthStartN2": 9,
+            "monthEndN2": 11,
+            "monthStartS": 3,
+            "monthEndS": 5,
+            "monthStartS": 9,
+            "monthEndS": 12,
+            "location": "River (clifftop)",
+            "shadowSize": "Medium"
         },
         {
             "name": "Cherry Salmon",
-            "price": 1000
+            "price": 1000,
+            "timeStart": 16,
+            "timeEnd": 9,
+            "monthStartN": 3,
+            "monthEndN": 6,
+            "monthStartN2": 9,
+            "monthEndN2": 11,
+            "monthStartS": 3,
+            "monthEndS": 5,
+            "monthStartS2": 9,
+            "monthEndS2": 12,
+            "location": "River (clifftop)",
+            "shadowSize": "Medium"
         },
         {
             "name": "Clownfish",
-            "price": 650
+            "price": 650,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 4,
+            "monthEndN": 9,
+            "monthStartS": 10,
+            "monthEndS": 3,
+            "location": "Sea",
+            "shadowSize": "Smallest"
         },
         {
             "name": "Coelacanth",
-            "price": 15000
+            "price": 15000,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "Sea (rainy days)",
+            "shadowSize": "Largest"
         },
         {
             "name": "Crawfish",
-            "price": 200
+            "price": 200,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 4,
+            "monthEndN": 9,
+            "monthStartS": 10,
+            "monthEndS": 3,
+            "location": "Pond",
+            "shadowSize": "Small"
         },
         {
             "name": "Crucian Carp",
-            "price": 160
+            "price": 160,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "River",
+            "shadowSize": "Small"
         },
         {
             "name": "Dab",
-            "price": 300
+            "price": 300,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 10,
+            "monthEndN": 4,
+            "monthStartS": 4,
+            "monthEndS": 10,
+            "location": "Sea",
+            "shadowSize": "Medium"
         },
         {
             "name": "Dace",
-            "price": 240
+            "price": 240,
+            "timeStart": 16,
+            "timeEnd": 9,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "River",
+            "shadowSize": "Medium"
         },
         {
             "name": "Dorado",
-            "price": 15000
+            "price": 15000,
+            "timeStart": 4,
+            "timeEnd": 21,
+            "monthStartN": 6,
+            "monthEndN": 9,
+            "monthStartS": 12,
+            "monthEndS": 3,
+            "location": "River",
+            "shadowSize": "X Large"
         },
         {
             "name": "Football Fish",
-            "price": 2500
+            "price": 2500,
+            "timeStart": 16,
+            "timeEnd": 9,
+            "monthStartN": 11,
+            "monthEndN": 3,
+            "monthStartS": 5,
+            "monthEndS": 9,
+            "location": "Sea",
+            "shadowSize": "Large"
         },
         {
             "name": "Freshwater Goby",
-            "price": 400
+            "price": 400,
+            "timeStart": 16,
+            "timeEnd": 9,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "River",
+            "shadowSize": "Small"
         },
         {
-            "name": "Frog"
+            "name": "Frog",
+            "price": 120,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 5,
+            "monthEndN": 8,
+            "monthStartS": 11,
+            "monthEndS": 2,
+            "location": "Pond",
+            "shadowSize": "Small"
         },
         {
             "name": "Gar",
-            "price": 6000
+            "price": 6000,
+            "timeStart": 4,
+            "timeEnd": 21,
+            "monthStartN": 6,
+            "monthEndN": 9,
+            "monthStartS": 12,
+            "monthEndS": 3,
+            "location": "Pond",
+            "shadowSize": "Largest"
         },
         {
-            "name": "Giant Snakehead"
+            "name": "Giant Snakehead",
+            "price": 5500,
+            "timeStart": 9,
+            "timeEnd": 16,
+            "monthStartN": 6,
+            "monthEndN": 8,
+            "monthStartS": 12,
+            "monthEndS": 2,
+            "location": "Pond",
+            "shadowSize": "X Large"
         },
         {
             "name": "Giant Trevally",
             "price": 4500,
-            "location": "Pier"
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 5,
+            "monthEndN": 10,
+            "monthStartS": 11,
+            "monthEndS": 4,
+            "location": "Pier",
+            "shadowSize": "Large"
         },
         {
             "name": "Golden Trout",
-            "price": 15000
+            "price": 15000,
+            "timeStart": 16,
+            "timeEnd": 9,
+            "monthStartN": 3,
+            "monthEndN": 6,
+            "monthStartN2": 9,
+            "monthEndN2": 11,
+            "monthStartS": 3,
+            "monthEndS": 5,
+            "monthStartS2": 9,
+            "monthEndS2": 12,
+            "location": "River (clifftop)",
+            "shadowSize": "Medium"
         },
         {
             "name": "Goldfish",
-            "price": 1300
+            "price": 1300,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "Pond",
+            "shadowSize": "Smallest"
         },
         {
             "name": "Great White Shark",
-            "price": 15000
+            "price": 15000,
+            "timeStart": 16,
+            "timeEnd": 9,
+            "monthStartN": 6,
+            "monthEndN": 9,
+            "monthStartS": 12,
+            "monthEndS": 3,
+            "location": "Pond",
+            "shadowSize": "Largest (fin)"
         },
         {
             "name": "Guppy",
-            "price": 1300
+            "price": 1300,
+            "timeStart": 9,
+            "timeEnd": 16,
+            "monthStartN": 4,
+            "monthEndN": 11,
+            "monthStartS": 10,
+            "monthEndS": 5,
+            "location": "River",
+            "shadowSize": "Smallest"
         },
         {
             "name": "Hammerhead Shark",
-            "price": 8000
+            "price": 8000,
+            "timeStart": 16,
+            "timeEnd": 9,
+            "monthStartN": 6,
+            "monthEndN": 9,
+            "monthStartS": 12,
+            "monthEndS": 3,
+            "location": "Sea",
+            "shadowSize": "Largest (fin)"
         },
         {
             "name": "Horse Mackerel",
-            "price": 150
+            "price": 150,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "Sea",
+            "shadowSize": "Small"
         },
         {
             "name": "Killifish",
-            "price": 300
+            "price": 300,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 4,
+            "monthEndN": 8,
+            "monthStartS": 10,
+            "monthEndS": 2,
+            "location": "Pond",
+            "shadowSize": "Smallest"
         },
         {
             "name": "King Salmon",
-            "price": 1800
+            "price": 1800,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 9,
+            "monthEndN": -1,
+            "monthStartS": 3,
+            "monthEndS": -1,
+            "location": "River (mouth)",
+            "shadowSize": "Largest"
         },
         {
             "name": "Koi",
-            "price": 4000
+            "price": 4000,
+            "timeStart": 16,
+            "timeEnd": 9,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "Pond",
+            "shadowSize": "Large"
         },
         {
             "name": "Loach",
-            "price": 400
+            "price": 400,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 3,
+            "monthEndN": 5,
+            "monthStartS": 9,
+            "monthEndS": 11,
+            "location": "River",
+            "shadowSize": "Small"
         },
         {
             "name": "Mahi-mahi",
-            "price": 6000
+            "price": 6000,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 5,
+            "monthEndN": 10,
+            "monthStartS": 11,
+            "monthEndS": 4,
+            "location": "Sea",
+            "shadowSize": "Large"
         },
         {
             "name": "Mitten Crab",
-            "price": 2000
+            "price": 2000,
+            "timeStart": 16,
+            "timeEnd": 9,
+            "monthStartN": 9,
+            "monthEndN": 11,
+            "monthStartS": 3,
+            "monthEndS": 5,
+            "location": "River",
+            "shadowSize": "Small"
         },
         {
             "name": "Moray Eel",
-            "price": 2000
+            "price": 2000,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 8,
+            "monthEndN": 10,
+            "monthStartS": 2,
+            "monthEndS": 4,
+            "location": "Sea",
+            "shadowSize": "Narrow"
         },
         {
             "name": "Napoleonfish",
-            "price": 10000
+            "price": 10000,
+            "timeStart": 4,
+            "timeEnd": 21,
+            "monthStartN": 7,
+            "monthEndN": 8,
+            "monthStartS": 1,
+            "monthEndS": 2,
+            "location": "Sea",
+            "shadowSize": "Largest"
         },
         {
             "name": "Neon Tetra",
-            "price": 500
+            "price": 500,
+            "timeStart": 9,
+            "timeEnd": 16,
+            "monthStartN": 4,
+            "monthEndN": 11,
+            "monthStartS": 10,
+            "monthEndS": 5,
+            "location": "River",
+            "shadowSize": "Smallest"
         },
         {
             "name": "Nibble Fish",
-            "price": 1500
+            "price": 1500,
+            "timeStart": 9,
+            "timeEnd": 16,
+            "monthStartN": 5,
+            "monthEndN": 9,
+            "monthStartS": 11,
+            "monthEndS": 3,
+            "location": "River",
+            "shadowSize": "Small"
         },
         {
             "name": "Oarfish",
-            "price": 9000
+            "price": 9000,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 12,
+            "monthEndN": 5,
+            "monthStartS": 6,
+            "monthEndS": 11,
+            "location": "Sea",
+            "shadowSize": "Largest"
         },
         {
             "name": "Ocean Sunfish",
-            "price": 4000
+            "price": 4000,
+            "timeStart": 4,
+            "timeEnd": 21,
+            "monthStartN": 7,
+            "monthEndN": 9,
+            "monthStartS": 1,
+            "monthEndS": 3,
+            "location": "Sea",
+            "shadowSize": "Largest (fin)"
         },
         {
             "name": "Olive Flounder",
-            "price": 800
+            "price": 800,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "Sea",
+            "shadowSize": "Large"
         },
         {
             "name": "Pale Chub",
-            "price": 160
+            "price": 160,
+            "timeStart": 9,
+            "timeEnd": 16,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "River",
+            "shadowSize": "Smallest"
         },
         {
             "name": "Pike",
-            "price": 1800
+            "price": 1800,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 9,
+            "monthEndN": 12,
+            "monthStartS": 3,
+            "monthEndS": 6,
+            "location": "River",
+            "shadowSize": "X Large"
         },
         {
             "name": "Piranha",
-            "price": 2500
+            "price": 2500,
+            "timeStart": 9,
+            "timeEnd": 16,
+            "timeStart2": 21,
+            "timeEnd2": 4,
+            "monthStartN": 6,
+            "monthEndN": 9,
+            "monthStartS": 12,
+            "monthEndS": 3,
+            "location": "River",
+            "shadowSize": "Small"
         },
         {
-            "name": "Pond Smelt"
+            "name": "Pond Smelt",
+            "price": 500,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 12,
+            "monthEndN": 2,
+            "monthStartS": 6,
+            "monthEndS": 8,
+            "location": "River",
+            "shadowSize": "Smallest"
         },
         {
             "name": "Pop-eyed Goldfish",
-            "price": 1300
+            "price": 1300,
+            "timeStart": 9,
+            "timeEnd": 16,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "Pond",
+            "shadowSize": "Smallest"
         },
         {
             "name": "Puffer Fish",
-            "price": 250
+            "price": 250,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 7,
+            "monthEndN": 9,
+            "monthStartS": 1,
+            "monthEndS": 3,
+            "location": "Sea",
+            "shadowSize": "Medium"
         },
         {
             "name": "Rainbowfish",
-            "price": 800
+            "price": 800,
+            "timeStart": 9,
+            "timeEnd": 16,
+            "monthStartN": 5,
+            "monthEndN": 10,
+            "monthStartS": 11,
+            "monthEndS": 4,
+            "location": "River",
+            "shadowSize": "Small"
         },
         {
             "name": "Ranchu Goldfish",
-            "price": 4500
+            "price": 4500,
+            "timeStart": 9,
+            "timeEnd": 16,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "Pond",
+            "shadowSize": "Small"
         },
         {
             "name": "Ray",
-            "price": 3000
+            "price": 3000,
+            "timeStart": 4,
+            "timeEnd": 21,
+            "monthStartN": 8,
+            "monthEndN": 11,
+            "monthStartS": 2,
+            "monthEndS": 5,
+            "location": "Sea",
+            "shadowSize": "X Large"
         },
         {
             "name": "Red Snapper",
-            "price": 3000
+            "price": 3000,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "Sea",
+            "shadowSize": "Large"
         },
         {
             "name": "Ribbon Eel",
-            "price": 600
+            "price": 600,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 6,
+            "monthEndN": 10,
+            "monthStartS": 12,
+            "monthEndS": 4,
+            "location": "Sea",
+            "shadowSize": "Narrow"
         },
         {
             "name": "Saddled Bichir",
-            "price": 4000
+            "price": 4000,
+            "timeStart": 21,
+            "timeEnd": 4,
+            "monthStartN": 6,
+            "monthEndN": 9,
+            "monthStartS": 12,
+            "monthEndS": 3,
+            "location": "River",
+            "shadowSize": "Large"
         },
         {
             "name": "Salmon",
-            "price": 700
+            "price": 700,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 9,
+            "monthEndN": -1,
+            "monthStartS": 3,
+            "monthEndS": -1,
+            "location": "River (mouth)",
+            "shadowSize": "Large"
         },
         {
             "name": "Saw Shark",
-            "price": 12000
+            "price": 12000,
+            "timeStart": 16,
+            "timeEnd": 9,
+            "monthStartN": 6,
+            "monthEndN": 9,
+            "monthStartS": 12,
+            "monthEndS": 3,
+            "location": "Sea",
+            "shadowSize": "Largest (fin)"
         },
         {
             "name": "Sea Bass",
-            "price": 400
+            "price": 400,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": -1,
+            "monthEndN": -1,
+            "monthStartS": -1,
+            "monthEndS": -1,
+            "location": "Sea",
+            "shadowSize": "Largest"
         },
         {
             "name": "Sea Butterfly",
-            "price": 1000
+            "price": 1000,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 12,
+            "monthEndN": 3,
+            "monthStartS": 6,
+            "monthEndS": 9,
+            "location": "Sea",
+            "shadowSize": "Smallest"
         },
         {
             "name": "Seahorse",
-            "price": 1100
+            "price": 1100,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 4,
+            "monthEndN": 11,
+            "monthStartS": 10,
+            "monthEndS": 5,
+            "location": "Sea",
+            "shadowSize": "Smallest"
         },
         {
             "name": "Snapping Turtle",
-            "price": 5000
+            "price": 5000,
+            "timeStart": 21,
+            "timeEnd": 4,
+            "monthStartN": 4,
+            "monthEndN": 10,
+            "monthStartS": 10,
+            "monthEndS": 4,
+            "location": "River",
+            "shadowSize": "X Large"
         },
         {
             "name": "Soft-shelled Turtle",
-            "price": 3750
+            "price": 3750,
+            "timeStart": 16,
+            "timeEnd": 9,
+            "monthStartN": 8,
+            "monthEndN": 9,
+            "monthStartS": 2,
+            "monthEndS": 3,
+            "location": "River",
+            "shadowSize": "Large"
         },
         {
             "name": "Squid",
-            "price": 500
+            "price": 500,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 12,
+            "monthEndN": 8,
+            "monthStartS": 6,
+            "monthEndS": 2,
+            "location": "Sea",
+            "shadowSize": "Medium"
         },
         {
             "name": "Stringfish",
-            "price": 15000
+            "price": 15000,
+            "timeStart": 16,
+            "timeEnd": 9,
+            "monthStartN": 12,
+            "monthEndN": 3,
+            "monthStartS": 6,
+            "monthEndS": 9,
+            "location": "River (clifftop)",
+            "shadowSize": "Largest"
         },
         {
             "name": "Sturgeon",
-            "price": 10000
+            "price": 10000,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 9,
+            "monthEndN": 3,
+            "monthStartS": 3,
+            "monthEndS": 9,
+            "location": "River (mouth)",
+            "shadowSize": "Largest"
         },
         {
             "name": "Suckerfish",
-            "price": 1500
+            "price": 1500,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 6,
+            "monthEndN": 9,
+            "monthStartS": 12,
+            "monthEndS": 3,
+            "location": "Sea",
+            "shadowSize": "Large (fin)"
         },
         {
             "name": "Surgeonfish",
-            "price": 1000
+            "price": 1000,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 4,
+            "monthEndN": 9,
+            "monthStartS": 10,
+            "monthEndS": 3,
+            "location": "Sea",
+            "shadowSize": "Small"
         },
         {
             "name": "Sweetfish",
-            "price": 900
+            "price": 900,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 7,
+            "monthEndN": 9,
+            "monthStartS": 1,
+            "monthEndS": 3,
+            "location": "River",
+            "shadowSize": "Medium"
         },
         {
             "name": "Tadpole",
-            "price": 100
+            "price": 100,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 3,
+            "monthEndN": 7,
+            "monthStartS": 9,
+            "monthEndS": 1,
+            "location": "Pond",
+            "shadowSize": "Smallest"
         },
         {
             "name": "Tilapia",
-            "price": 800
+            "price": 800,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 6,
+            "monthEndN": 10,
+            "monthStartS": 12,
+            "monthEndS": 4,
+            "location": "River",
+            "shadowSize": "Medium"
         },
         {
             "name": "Tuna",
-            "price": 7000
+            "price": 7000,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 11,
+            "monthEndN": 4,
+            "monthStartS": 5,
+            "monthEndS": 10,
+            "location": "Pier",
+            "shadowSize": "Largest"
         },
         {
             "name": "Whale Shark",
-            "price": 13000
+            "price": 13000,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 6,
+            "monthEndN": 9,
+            "monthStartS": 12,
+            "monthEndS": 3,
+            "location": "Sea",
+            "shadowSize": "Largest (fin)"
         },
         {
             "name": "Yellow Perch",
-            "price": 300
+            "price": 300,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 10,
+            "monthEndN": 3,
+            "monthStartS": 4,
+            "monthEndS": 9,
+            "location": "River",
+            "shadowSize": "Medium"
         },
         {
             "name": "Zebra Turkeyfish",
-            "price": 500
+            "price": 500,
+            "timeStart": -1,
+            "timeEnd": -1,
+            "monthStartN": 4,
+            "monthEndN": 11,
+            "monthStartS": 10,
+            "monthEndS": 5,
+            "location": "Sea",
+            "shadowSize": "Medium"
         }
     ]
 }

@@ -1,24 +1,15 @@
-import 'date-fns';
-import DateFnsUtils from '@date-io/date-fns';
 import React from 'react';
-import Radio from '@material-ui/core/Radio';
-import RadioGroup from '@material-ui/core/RadioGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormControl from '@material-ui/core/FormControl';
-import FormLabel from '@material-ui/core/FormLabel';
+import Container from '@material-ui/core/Container';
+import ToggleButton from '@material-ui/lab/ToggleButton';
+import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
 import Grid from '@material-ui/core/Grid';
-import {
-    MuiPickersUtilsProvider,
-    KeyboardTimePicker,
-    KeyboardDatePicker,
-} from '@material-ui/pickers';
-
-
-
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
+import Paper from '@material-ui/core/Paper';
 
 import { List } from './components/list.jsx';
+import { TIME_MAP, MONTH_MAP } from './constants.js';
 import styles from './less/site.less';
-
 
 export class App extends React.Component {
     constructor(props) {
@@ -27,56 +18,19 @@ export class App extends React.Component {
         let date = new Date();
         let month = date.getMonth() + 1;
 
-        console.log('date.getHours():  ', date.getHours());
-
         this.state = {
             listData: {},
             dataType: localStorage.getItem('dataType') || 'bugs',
             hemi: localStorage.getItem('hemi') || 'N',
             selectedMonth: month,
-            selectedDate: date,
             selectedTime: date.getHours()
         };
 
-        this.timeMap = {
-            1: '1am',
-            2: '2am',
-            3: '3am',
-            4: '4am',
-            5: '5am',
-            6: '6am',
-            7: '7am',
-            8: '8am',
-            9: '9am',
-            10: '10am',
-            11: '11am',
-            12: '12pm',
-            13: '1pm',
-            14: '2pm',
-            15: '3pm',
-            16: '4pm',
-            17: '5pm',
-            18: '6pm',
-            19: '7pm',
-            20: '8pm',
-            21: '9pm',
-            22: '10pm',
-            23: '11pm'
-        };
-        this.monthMap = {
-            1: 'Jan.',
-            2: 'Feb.',
-            3: 'Mar.',
-            4: 'Apr.',
-            5: 'May',
-            6: 'June',
-            7: 'July',
-            8: 'Aug.',
-            9: 'Sept.',
-            10: 'Oct.',
-            11: 'Nov.',
-            12: 'Dec.'
-        };
+        console.log('month ', month);
+        console.log('hours ', date.getHours());
+
+        this.timeMap = TIME_MAP;
+        this.monthMap = MONTH_MAP;
 
         this.getData = this.getData.bind(this);
         this.onHemiChange = this.onHemiChange.bind(this);
@@ -177,19 +131,17 @@ export class App extends React.Component {
     }
 
     onDateChange(evt, date) {
-        console.log('onDateChange change ', date);
-        date = +date.split('/')[0];
+        console.log('onDateChange change ', date.props.value);
         this.setState({
-            selectedDate: date
+            selectedMonth: date.props.value
         }, () => {
             this.filterResults()
         });
     }
     onTimeChange(evt, time) {
-        console.log('onTimeChange change ', time);
-        time = +time.split(':')[0];
+        console.log('onTimeChange change ', evt, time);
         this.setState({
-            selectedTime: time
+            selectedTime: time.props.value
         }, () => {
             this.filterResults()
         });
@@ -264,88 +216,95 @@ export class App extends React.Component {
         this.setState({
             listData: data
         });
-        console.log('filterResults DATA: ', data);
-
     }
 
     render() {
-        console.log('this.bugs: ', this.bugs);
-
         return (
-            <div>
-                <div className={styles.filterRow}>
-                    <Grid container justify="space-around">
+            <Container elevation={3}>
+                <h1><img src={'logo.png'} alt={'AC-WhatNow.com Logo'}/></h1>
+                <h4>Your source to find out what's available in Animal Crossing New Horizions RIGHT NOW!</h4>
+                <div >
+                    <Grid className={styles.filterRow} container justify="space-around" component={Paper} elevation={3}>
+
                         <div className={styles.dataTypeControl}>
-                            <FormControl component="fieldset">
-                                <RadioGroup row
-                                            aria-label="position"
-                                            name="dataType"
-                                            defaultValue={this.state.dataType}
-                                            onChange={this.onDataTypeChange}>
-                                    <FormControlLabel
-                                        value="bugs"
-                                        control={<Radio color="primary" />}
-                                        label="Bugs"
-                                        labelPlacement="top"
-                                    />
-                                    <FormControlLabel
-                                        value="fish"
-                                        control={<Radio color="primary" />}
-                                        label="Fish"
-                                        labelPlacement="top"
-                                    />
-                                </RadioGroup>
-                            </FormControl>
+                            <div>Type</div>
+                            <ToggleButtonGroup
+                                value={this.state.dataType}
+                                exclusive
+                                onChange={this.onDataTypeChange}
+                                aria-label="text alignment"
+                            >
+                                <ToggleButton value="bugs" aria-label="left aligned">Bugs</ToggleButton>
+                                <ToggleButton value="fish" aria-label="centered">Fish</ToggleButton>
+                            </ToggleButtonGroup>
                         </div>
 
-                        <MuiPickersUtilsProvider utils={DateFnsUtils}>
-                            <KeyboardDatePicker
-                                disableToolbar
-                                variant="inline"
-                                format="MM/dd/yyyy"
-                                margin="normal"
-                                id="date-picker-inline"
-                                label="Date"
-                                value={this.state.selectedDate}
-                                onChange={this.onDateChange}
-                                KeyboardButtonProps={{
-                                    'aria-label': 'change date',
-                                }}
-                            />
-                            <KeyboardTimePicker
-                                margin="normal"
-                                id="time-picker"
-                                label="Time"
-                                value={this.state.selectedDate}
-                                onChange={this.onTimeChange}
-                                KeyboardButtonProps={{
-                                    'aria-label': 'change time',
-                                }}
-                            />
-                        </MuiPickersUtilsProvider>
+                        <Select
+                            labelId="select-month-label"
+                            id="select-month"
+                            value={this.state.selectedMonth}
+                            onChange={this.onDateChange}
+                        >
+                            <MenuItem value={1}>Jan.</MenuItem>
+                            <MenuItem value={2}>Feb.</MenuItem>
+                            <MenuItem value={3}>Mar.</MenuItem>
+                            <MenuItem value={4}>Apr.</MenuItem>
+                            <MenuItem value={5}>May</MenuItem>
+                            <MenuItem value={6}>June</MenuItem>
+                            <MenuItem value={7}>July</MenuItem>
+                            <MenuItem value={8}>Aug.</MenuItem>
+                            <MenuItem value={9}>Sept.</MenuItem>
+                            <MenuItem value={10}>Oct.</MenuItem>
+                            <MenuItem value={11}>Nov.</MenuItem>
+                            <MenuItem value={12}>Dec.</MenuItem>
+                        </Select>
 
+                        <Select
+                            labelId="demo-simple-select-label"
+                            id="demo-simple-select"
+                            value={this.state.selectedTime}
+                            onChange={this.onTimeChange}
+                        >
+                            <MenuItem value={0}>12 am</MenuItem>
+                            <MenuItem value={1}>1 am</MenuItem>
+                            <MenuItem value={2}>2 am</MenuItem>
+                            <MenuItem value={3}>3 am</MenuItem>
+                            <MenuItem value={4}>4 am</MenuItem>
+                            <MenuItem value={5}>5 am</MenuItem>
+                            <MenuItem value={6}>6 am</MenuItem>
+                            <MenuItem value={7}>7 am</MenuItem>
+                            <MenuItem value={8}>8 am</MenuItem>
+                            <MenuItem value={9}>9 am</MenuItem>
+                            <MenuItem value={10}>10 am</MenuItem>
+                            <MenuItem value={11}>11 am</MenuItem>
+                            <MenuItem value={12}>12 pm</MenuItem>
+                            <MenuItem value={13}>1 pm</MenuItem>
+                            <MenuItem value={14}>2 pm</MenuItem>
+                            <MenuItem value={15}>3 pm</MenuItem>
+                            <MenuItem value={16}>4 pm</MenuItem>
+                            <MenuItem value={17}>5 pm</MenuItem>
+                            <MenuItem value={18}>6 pm</MenuItem>
+                            <MenuItem value={19}>7 pm</MenuItem>
+                            <MenuItem value={20}>8 pm</MenuItem>
+                            <MenuItem value={21}>9 pm</MenuItem>
+                            <MenuItem value={22}>10 pm</MenuItem>
+                            <MenuItem value={23}>11 pm</MenuItem>
+                        </Select>
                         <div className={styles.hemisphereControl}>
-                            <FormControl component="fieldset">
-                                <RadioGroup row
-                                            aria-label="position"
-                                            name="hemisphere"
-                                            defaultValue={this.state.hemi}
-                                            onChange={this.onHemiChange}>
-                                    <FormControlLabel
-                                        value="N"
-                                        control={<Radio color="primary" />}
-                                        label="Northern"
-                                        labelPlacement="top"
-                                    />
-                                    <FormControlLabel
-                                        value="S"
-                                        control={<Radio color="primary" />}
-                                        label="Southern"
-                                        labelPlacement="top"
-                                    />
-
-                                </RadioGroup>
-                            </FormControl>
+                            <div>Hemisphere</div>
+                            <ToggleButtonGroup
+                                value={this.state.hemi}
+                                exclusive
+                                onChange={this.onHemiChange}
+                                aria-label="text alignment"
+                            >
+                                <ToggleButton value="N" aria-label="left aligned">
+                                    Northern
+                                </ToggleButton>
+                                <ToggleButton value="S" aria-label="centered">
+                                    Southern
+                                </ToggleButton>
+                            </ToggleButtonGroup>
                         </div>
                     </Grid>
 
@@ -353,10 +312,18 @@ export class App extends React.Component {
                 <div>
                     <List
                         listData={this.state.listData}
+                        dataType={this.state.dataType}
                         hemi={this.state.hemi}
                     />
                 </div>
-            </div>
+                <footer>
+                    <div className={styles.footerContainer}>
+                        <div className={styles.footer}>
+
+                        </div>
+                    </div>
+                </footer>
+            </Container>
         );
     }
 }

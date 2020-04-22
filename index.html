@@ -1,8 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" class="" <% if(htmlWebpackPlugin.files.manifest) { %> manifest="<%= htmlWebpackPlugin.files.manifest %>"<% } %>>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5201842-8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-5201842-8');
+    </script>
+
     <meta charset="utf-8">
-    <title><%= htmlWebpackPlugin.options.projectConfig.name || 'Webpack App'%></title>
+    <title><%= htmlWebpackPlugin.options.projectConfig.name %></title>
+    <meta name="description" content="<%= htmlWebpackPlugin.options.projectConfig.desc %>">
+    <meta name="keywords" content="<%= htmlWebpackPlugin.options.projectConfig.keywords %>">
+
+    <meta property="og:title" content="<%= htmlWebpackPlugin.options.projectConfig.name %>">
+    <meta property="og:description" content="<%= htmlWebpackPlugin.options.projectConfig.desc %>">
+    <meta property="og:image" content="http://ac-whatnow.com/logo.png">
+    <meta property="og:url" content="http://ac-whatnow.com/">
+
     <% for (var css in htmlWebpackPlugin.files.css) { %>
     <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
     <% } %>
