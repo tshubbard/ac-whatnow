@@ -15,6 +15,8 @@ export class List extends React.Component {
     constructor(props) {
         super(props);
 
+        console.log('styles: ', styles);
+
         this.state = {
             listData: this.props.listData,
             hemi: this.props.hemi,
@@ -99,7 +101,7 @@ export class List extends React.Component {
         let listData = orderBy(this.props.listData, this.state.orderBy, this.state.order);
 
         return (
-            <TableContainer component={Paper} elevation={3}>
+            <TableContainer component={Paper} className={styles.paperRounded} elevation={3}>
                 <Table className={styles.dataTable} aria-label="simple table">
                     <TableHead>
                         <TableRow>

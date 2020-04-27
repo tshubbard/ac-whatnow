@@ -1,11 +1,17 @@
+body {
+    margin: 0;
+    background-color: #7D7D7D;
+
+    .paperRounded {
+        border-radius: 12px;
+    }
+}
 .filterRow {
     padding: 10px;
 }
-
 .dataTable {
     padding: 13px;
 }
-
 .visuallyHidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -17,10 +23,31 @@
     top: 20px;
     width: 1px;
 }
-
+header {
+    position: relative;
+}
+.header {
+    background: #E0E0E0;
+    margin-bottom: 25px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 12px;
+}
+.headerLabel {
+    background: #2F2966;
+    border-radius: 12px;
+    position: absolute;
+    top: -20px;
+    left: 8px;
+    padding: 12px;
+    color: #FFFFFF;
+}
 footer {
     background: #E0E0E0;
     margin-top: 25px;
     height: 50px;
     padding: 15px;
+    border-radius: 12px;
 }
+
+

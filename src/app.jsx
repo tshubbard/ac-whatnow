@@ -10,6 +10,12 @@ import Paper from '@material-ui/core/Paper';
 import { List } from './components/list.jsx';
 import { TIME_MAP, MONTH_MAP } from './constants.js';
 import styles from './less/site.less';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+const darkTheme = createMuiTheme({
+    palette: {
+        type: 'dark',
+    },
+});
 
 export class App extends React.Component {
     constructor(props) {
@@ -271,113 +277,121 @@ export class App extends React.Component {
 
     render() {
         return (
-            <Container elevation={3}>
-                <h1><img src={'logo.png'} alt={'AC-WhatNow.com Logo'}/></h1>
-                <h3>Your source to find out what's available in Animal Crossing: New Horizons RIGHT NOW!</h3>
-                <div>
-                    <Grid className={styles.filterRow} container justify="space-around" component={Paper} elevation={3}>
+            <ThemeProvider theme={darkTheme}>
 
-                        <div className={styles.dataTypeControl}>
-                            <div>Type</div>
-                            <ToggleButtonGroup
-                                value={this.state.dataType}
-                                exclusive
-                                onChange={this.onDataTypeChange}
-                                aria-label="text alignment"
+                <Container elevation={3}>
+                    <h1><img src={'logo.png'} alt={'AC-WhatNow.com Logo'}/></h1>
+                    <header>
+                        <div className={styles.header}>
+                            <div className={styles.headerLabel}>What's This?</div>
+                            <h3>Your source to find out what's available in Animal Crossing: New Horizons RIGHT NOW!</h3>
+                        </div>
+                    </header>
+                    <div>
+                        <Grid className={`${styles.filterRow} ${styles.paperRounded}`} container justify="space-around" component={Paper} elevation={3}>
+
+                            <div className={styles.dataTypeControl}>
+                                <div>Type</div>
+                                <ToggleButtonGroup
+                                    value={this.state.dataType}
+                                    exclusive
+                                    onChange={this.onDataTypeChange}
+                                    aria-label="text alignment"
+                                >
+                                    <ToggleButton value="bugs" aria-label="left aligned">Bugs</ToggleButton>
+                                    <ToggleButton value="fish" aria-label="centered">Fish</ToggleButton>
+                                </ToggleButtonGroup>
+                            </div>
+
+                            <Select
+                                labelId="select-month-label"
+                                id="select-month"
+                                value={this.state.selectedMonth}
+                                onChange={this.onDateChange}
                             >
-                                <ToggleButton value="bugs" aria-label="left aligned">Bugs</ToggleButton>
-                                <ToggleButton value="fish" aria-label="centered">Fish</ToggleButton>
-                            </ToggleButtonGroup>
-                        </div>
+                                <MenuItem value={1}>Jan.</MenuItem>
+                                <MenuItem value={2}>Feb.</MenuItem>
+                                <MenuItem value={3}>Mar.</MenuItem>
+                                <MenuItem value={4}>Apr.</MenuItem>
+                                <MenuItem value={5}>May</MenuItem>
+                                <MenuItem value={6}>June</MenuItem>
+                                <MenuItem value={7}>July</MenuItem>
+                                <MenuItem value={8}>Aug.</MenuItem>
+                                <MenuItem value={9}>Sept.</MenuItem>
+                                <MenuItem value={10}>Oct.</MenuItem>
+                                <MenuItem value={11}>Nov.</MenuItem>
+                                <MenuItem value={12}>Dec.</MenuItem>
+                            </Select>
 
-                        <Select
-                            labelId="select-month-label"
-                            id="select-month"
-                            value={this.state.selectedMonth}
-                            onChange={this.onDateChange}
-                        >
-                            <MenuItem value={1}>Jan.</MenuItem>
-                            <MenuItem value={2}>Feb.</MenuItem>
-                            <MenuItem value={3}>Mar.</MenuItem>
-                            <MenuItem value={4}>Apr.</MenuItem>
-                            <MenuItem value={5}>May</MenuItem>
-                            <MenuItem value={6}>June</MenuItem>
-                            <MenuItem value={7}>July</MenuItem>
-                            <MenuItem value={8}>Aug.</MenuItem>
-                            <MenuItem value={9}>Sept.</MenuItem>
-                            <MenuItem value={10}>Oct.</MenuItem>
-                            <MenuItem value={11}>Nov.</MenuItem>
-                            <MenuItem value={12}>Dec.</MenuItem>
-                        </Select>
-
-                        <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={this.state.selectedTime}
-                            onChange={this.onTimeChange}
-                        >
-                            <MenuItem value={0}>12 am</MenuItem>
-                            <MenuItem value={1}>1 am</MenuItem>
-                            <MenuItem value={2}>2 am</MenuItem>
-                            <MenuItem value={3}>3 am</MenuItem>
-                            <MenuItem value={4}>4 am</MenuItem>
-                            <MenuItem value={5}>5 am</MenuItem>
-                            <MenuItem value={6}>6 am</MenuItem>
-                            <MenuItem value={7}>7 am</MenuItem>
-                            <MenuItem value={8}>8 am</MenuItem>
-                            <MenuItem value={9}>9 am</MenuItem>
-                            <MenuItem value={10}>10 am</MenuItem>
-                            <MenuItem value={11}>11 am</MenuItem>
-                            <MenuItem value={12}>12 pm</MenuItem>
-                            <MenuItem value={13}>1 pm</MenuItem>
-                            <MenuItem value={14}>2 pm</MenuItem>
-                            <MenuItem value={15}>3 pm</MenuItem>
-                            <MenuItem value={16}>4 pm</MenuItem>
-                            <MenuItem value={17}>5 pm</MenuItem>
-                            <MenuItem value={18}>6 pm</MenuItem>
-                            <MenuItem value={19}>7 pm</MenuItem>
-                            <MenuItem value={20}>8 pm</MenuItem>
-                            <MenuItem value={21}>9 pm</MenuItem>
-                            <MenuItem value={22}>10 pm</MenuItem>
-                            <MenuItem value={23}>11 pm</MenuItem>
-                        </Select>
-                        <div className={styles.hemisphereControl}>
-                            <div>Hemisphere</div>
-                            <ToggleButtonGroup
-                                value={this.state.hemi}
-                                exclusive
-                                onChange={this.onHemiChange}
-                                aria-label="text alignment"
+                            <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                value={this.state.selectedTime}
+                                onChange={this.onTimeChange}
                             >
-                                <ToggleButton value="N" aria-label="left aligned">
-                                    Northern
-                                </ToggleButton>
-                                <ToggleButton value="S" aria-label="centered">
-                                    Southern
-                                </ToggleButton>
-                            </ToggleButtonGroup>
-                        </div>
-                    </Grid>
+                                <MenuItem value={0}>12 am</MenuItem>
+                                <MenuItem value={1}>1 am</MenuItem>
+                                <MenuItem value={2}>2 am</MenuItem>
+                                <MenuItem value={3}>3 am</MenuItem>
+                                <MenuItem value={4}>4 am</MenuItem>
+                                <MenuItem value={5}>5 am</MenuItem>
+                                <MenuItem value={6}>6 am</MenuItem>
+                                <MenuItem value={7}>7 am</MenuItem>
+                                <MenuItem value={8}>8 am</MenuItem>
+                                <MenuItem value={9}>9 am</MenuItem>
+                                <MenuItem value={10}>10 am</MenuItem>
+                                <MenuItem value={11}>11 am</MenuItem>
+                                <MenuItem value={12}>12 pm</MenuItem>
+                                <MenuItem value={13}>1 pm</MenuItem>
+                                <MenuItem value={14}>2 pm</MenuItem>
+                                <MenuItem value={15}>3 pm</MenuItem>
+                                <MenuItem value={16}>4 pm</MenuItem>
+                                <MenuItem value={17}>5 pm</MenuItem>
+                                <MenuItem value={18}>6 pm</MenuItem>
+                                <MenuItem value={19}>7 pm</MenuItem>
+                                <MenuItem value={20}>8 pm</MenuItem>
+                                <MenuItem value={21}>9 pm</MenuItem>
+                                <MenuItem value={22}>10 pm</MenuItem>
+                                <MenuItem value={23}>11 pm</MenuItem>
+                            </Select>
+                            <div className={styles.hemisphereControl}>
+                                <div>Hemisphere</div>
+                                <ToggleButtonGroup
+                                    value={this.state.hemi}
+                                    exclusive
+                                    onChange={this.onHemiChange}
+                                    aria-label="text alignment"
+                                >
+                                    <ToggleButton value="N" aria-label="left aligned">
+                                        Northern
+                                    </ToggleButton>
+                                    <ToggleButton value="S" aria-label="centered">
+                                        Southern
+                                    </ToggleButton>
+                                </ToggleButtonGroup>
+                            </div>
+                        </Grid>
 
-                </div>
-                <div>
-                    <List
-                        listData={this.state.listData}
-                        dataType={this.state.dataType}
-                        hemi={this.state.hemi}
-                    />
-                </div>
-                <footer>
-                    <div className={styles.footerContainer}>
-                        <div className={styles.footer}>
-                            Any issues or requests can be filed:
-                            <a href={'https://github.com/tshubbard/ac-whatnow/issues'} target={'_blank'}>
-                                https://github.com/tshubbard/ac-whatnow/issues
-                            </a>
-                        </div>
                     </div>
-                </footer>
-            </Container>
+                    <div>
+                        <List
+                            listData={this.state.listData}
+                            dataType={this.state.dataType}
+                            hemi={this.state.hemi}
+                        />
+                    </div>
+                    <footer>
+                        <div className={styles.footerContainer}>
+                            <div className={styles.footer}>
+                                Any issues or requests can be filed:
+                                <a href={'https://github.com/tshubbard/ac-whatnow/issues'} target={'_blank'}>
+                                    https://github.com/tshubbard/ac-whatnow/issues
+                                </a>
+                            </div>
+                        </div>
+                    </footer>
+                </Container>
+            </ThemeProvider>
         );
     }
 }
