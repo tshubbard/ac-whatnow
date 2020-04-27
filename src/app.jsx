@@ -26,9 +26,6 @@ export class App extends React.Component {
             selectedTime: date.getHours()
         };
 
-        console.log('month ', month);
-        console.log('hours ', date.getHours());
-
         this.timeMap = TIME_MAP;
         this.monthMap = MONTH_MAP;
 
@@ -42,6 +39,9 @@ export class App extends React.Component {
         this.getData();
     }
 
+    /**
+     * Fetches the json data for the site
+     */
     getData() {
         fetch('data.json')
             .then(r => r.json())
@@ -49,8 +49,8 @@ export class App extends React.Component {
                 console.log('data: ', data);
                 this.bugs = this.processData(data.bugs);
                 this.fish = this.processData(data.fish);
-                console.log('this.bugs: ', this.bugs);
 
+                // set the initial listData
                 this.setState({
                     listData: this.state.dataType === 'bugs' ? this.bugs : this.fish
                 });
@@ -59,6 +59,12 @@ export class App extends React.Component {
             });
     }
 
+    /**
+     * Processes initial data load and adds time and month labels
+     *
+     * @param {Object} data The JSON data initially loaded
+     * @return {*}
+     */
     processData(data) {
         let timeLabel;
         let monthLabel;
@@ -75,6 +81,12 @@ export class App extends React.Component {
         return data;
     }
 
+    /**
+     * Processes an individual data node to add the Time Label
+     *
+     * @param {Object} data The JSON data to process
+     * @return {string}
+     */
     processTimeLabel(data) {
         let label = '';
         if (data.timeStart === -1) {
@@ -90,6 +102,13 @@ export class App extends React.Component {
         return label;
     }
 
+    /**
+     * Processes an individual data node to add the Month Label
+     *
+     * @param {Object} data The JSON data to process
+     * @param {string} hemi Which Hemisphere
+     * @returns {string}
+     */
     processMonthLabel(data, hemi) {
         let label = '';
 
@@ -109,11 +128,18 @@ export class App extends React.Component {
         return label;
     }
 
+    /**
+     * Handles when the Hemisphere is changed
+     *
+     * @param evt
+     * @param {string} hemi Which Hemisphere
+     */
     onHemiChange(evt, hemi) {
         if (!hemi) {
             return;
         }
-        console.log('hemi change ', hemi);
+
+        // set the hemisphere on localstorage for the next page visit or refresh
         localStorage.setItem('hemi', hemi);
         this.setState({
             hemi: hemi
@@ -122,13 +148,18 @@ export class App extends React.Component {
         });
     }
 
+    /**
+     * Handles when the DataType is changed - Bugs or Fish
+     *
+     * @param evt
+     * @param {string} dataType If we're showing bugs or fish
+     */
     onDataTypeChange(evt, dataType) {
-        console.log('DT CHANGE ', dataType, this.state.dataType);
-
         if (!dataType) {
             return;
         }
-        console.log('onDataTypeChange change ', dataType);
+
+        // set the item on localstorage for the next page visit or refresh
         localStorage.setItem('dataType', dataType);
         this.setState({
             dataType: dataType,
@@ -138,16 +169,27 @@ export class App extends React.Component {
         });
     }
 
+    /**
+     * Handles when the Month is changed
+     *
+     * @param evt
+     * @param {Number} date The Month number we changed to
+     */
     onDateChange(evt, date) {
-        console.log('onDateChange change ', date.props.value);
         this.setState({
             selectedMonth: date.props.value
         }, () => {
             this.filterResults()
         });
     }
+
+    /**
+     * Handles when the Time is changed
+     *
+     * @param evt
+     * @param {Number} time The time user changed to
+     */
     onTimeChange(evt, time) {
-        console.log('onTimeChange change ', evt, time);
         this.setState({
             selectedTime: time.props.value
         }, () => {
@@ -155,6 +197,9 @@ export class App extends React.Component {
         });
     }
 
+    /**
+     * Filters all the results
+     */
     filterResults() {
         let dt = this.state.dataType;
         let data = this[dt];
@@ -167,8 +212,6 @@ export class App extends React.Component {
         let overyear;
         let hemiKeyStart;
         let hemiKeyEnd;
-        console.log('filterResults "time" ', time);
-        console.log('filterResults "hemi" ', hemi);
 
         data = data.filter(d => {
             inTime = false;
@@ -230,8 +273,8 @@ export class App extends React.Component {
         return (
             <Container elevation={3}>
                 <h1><img src={'logo.png'} alt={'AC-WhatNow.com Logo'}/></h1>
-                <h3>Your source to find out what's available in Animal Crossing New Horizions RIGHT NOW!</h3>
-                <div >
+                <h3>Your source to find out what's available in Animal Crossing: New Horizons RIGHT NOW!</h3>
+                <div>
                     <Grid className={styles.filterRow} container justify="space-around" component={Paper} elevation={3}>
 
                         <div className={styles.dataTypeControl}>

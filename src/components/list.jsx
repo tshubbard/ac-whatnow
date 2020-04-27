@@ -30,11 +30,11 @@ export class List extends React.Component {
             id: 'price',
             label: 'Price'
         }, {
-            id: 'time',
-            label: 'Time'
-        }, {
             id: 'months',
             label: 'Months'
+        }, {
+            id: 'time',
+            label: 'Time'
         }, {
             id: 'location',
             label: 'Location'
@@ -42,6 +42,7 @@ export class List extends React.Component {
             id: 'shadowSize',
             label: 'Shadow Size'
         }];
+
         this.tHeadersBugs = [{
             id: 'name',
             label: 'Name'
@@ -49,23 +50,33 @@ export class List extends React.Component {
             id: 'price',
             label: 'Price'
         }, {
-            id: 'time',
-            label: 'Time'
-        }, {
             id: 'months',
             label: 'Months'
+        }, {
+            id: 'time',
+            label: 'Time'
         }, {
             id: 'location',
             label: 'Location'
         }];
     }
 
+    /**
+     * Handles setting the order - asc desc
+     *
+     * @param {string} order The direction to order the column by
+     */
     setOrder(order) {
         this.setState({
             order: order
         });
     }
 
+    /**
+     * Handles setting the Order By column
+     *
+     * @param {string} orderBy The ID of the column to order by
+     */
     setOrderBy(orderBy) {
         this.setState({
             orderBy: orderBy
@@ -86,10 +97,6 @@ export class List extends React.Component {
             onRequestSort(event, property);
         };
         let listData = orderBy(this.props.listData, this.state.orderBy, this.state.order);
-
-        console.log('### headCells ', headCells);
-        console.log('### this.state.dataType ', this.state.dataType);
-        console.log('### this.props.dataType ', this.props.dataType);
 
         return (
             <TableContainer component={Paper} elevation={3}>
@@ -125,8 +132,8 @@ export class List extends React.Component {
                                     {row.name}
                                 </TableCell>
                                 <TableCell>{row.price}</TableCell>
-                                <TableCell>{row.time}</TableCell>
                                 <TableCell>{this.props.hemi === 'N' ? row.monthsN : row.monthsS}</TableCell>
+                                <TableCell>{row.time}</TableCell>
                                 <TableCell>{row.location}</TableCell>
                                 {this.props.dataType === 'fish' ? (
                                     <TableCell>{row.shadowSize}</TableCell>
