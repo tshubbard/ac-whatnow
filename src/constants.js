@@ -1,4 +1,5 @@
 const TIME_MAP = {
+    0: '12am',
     1: '1am',
     2: '2am',
     3: '3am',
